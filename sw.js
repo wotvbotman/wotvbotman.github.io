@@ -1,11 +1,6 @@
----
-layout: compress
-# PWA service worker
----
+self.importScripts('/assets/js/data/cache-list.js');
 
-self.importScripts('{{ "/assets/js/data/cache-list.js" | relative_url }}');
-
-var cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
+var cacheName = 'chirpy-20210428.0644';
 
 function isExcluded(url) {
   const regex = /(^http(s)?|^\/)/; /* the regex for CORS url or relative url */
@@ -58,3 +53,4 @@ self.addEventListener('activate', (e) => {
     })
   );
 });
+
