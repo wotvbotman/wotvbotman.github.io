@@ -1,6 +1,6 @@
 self.importScripts('/assets/js/data/cache-list.js');
 
-var cacheName = 'chirpy-20210428.0626';
+var cacheName = 'chirpy-20210428.0630';
 
 function isExcluded(url) {
   const regex = /(^http(s)?|^\/)/; /* the regex for CORS url or relative url */
